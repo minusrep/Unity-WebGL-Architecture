@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-
-namespace Core
+﻿namespace Core
 {
     [System.Serializable]
     public abstract class Model
