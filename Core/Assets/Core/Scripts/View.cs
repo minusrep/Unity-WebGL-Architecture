@@ -2,9 +2,9 @@
 
 namespace Core
 {
-    public abstract class View<T, S> : MonoBehaviour where T : Controller where S : Settings
+    public abstract class View<T, S> : MonoBehaviour where T : Controller where S : Model
     {
-        [SerializeField] private S settings;
+        [SerializeField] private S model;
         protected T controller;
 
 
@@ -29,7 +29,7 @@ namespace Core
         private void OnControllersCreated()
         {
             this.controller = GameManager.GetController<T>();
-            this.controller.Initialize<S>(this.settings);
+            this.controller.Initialize<S>(this.model);
         }
 
         protected abstract void OnGameLoaded();

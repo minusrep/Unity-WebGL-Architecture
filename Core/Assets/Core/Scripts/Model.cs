@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Core
 {
     [System.Serializable]
-    public abstract class Settings
+    public abstract class Model
     {
 
     }

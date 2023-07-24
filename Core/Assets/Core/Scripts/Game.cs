@@ -19,7 +19,7 @@ namespace Core
         private Dictionary<Type, Controller> controllersMap;
 
 
-        public Game()
+        public Game(Data data, string language = "ru")
         {
             this.controllersMap = new Dictionary<Type, Controller>();
         }
